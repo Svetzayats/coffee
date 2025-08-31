@@ -14,6 +14,12 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                print("Clicked")
+            }
+            .padding(0.0)
         }
         .padding()
     }
