@@ -11,13 +11,18 @@ struct Offer: View {
     var title = ""
     var description = ""
     var body: some View {
-        
-        VStack {
-            Text(title)
-                .padding()
-            Text(description)
-                .padding()
+        ZStack {
+            Image("Image")
+            VStack {
+                Text(title)
+                    .padding()
+                    .background(Color("CardBackground"))
+                Text(description)
+                    .padding()
+                    .background(Color("CardBackground"))
+            }
         }
+        
     }
 }
 
