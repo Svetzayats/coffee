@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct OrdersPage: View {
+struct OrderPage: View {
     var body: some View {
         Text("Order page")
     }
 }
 
 #Preview {
-    OrdersPage()
+    OrderPage()
 }
