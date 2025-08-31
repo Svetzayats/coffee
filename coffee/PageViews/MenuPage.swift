@@ -13,9 +13,9 @@ struct MenuPage: View {
             List {
                 ForEach (0 ..< 15) { item in
                     NavigationLink {
-                        DetailsPage()
+                        DetailsPage(product: Product(id: 1, name: "Coffee", description: nil, price: 1.5, image:""))
                     } label: {
-                        ProductItem()
+                        ProductItem(product: Product(id: 1, name: "Coffee", description: nil, price: 1.5, image:""))
                     }
                 }
             }.navigationTitle("Products")
