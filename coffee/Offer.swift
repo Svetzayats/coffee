@@ -13,6 +13,8 @@ struct Offer: View {
     var body: some View {
         ZStack {
             Image("Image")
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                .clipped()
             VStack {
                 Text(title)
                     .padding()

@@ -9,19 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-                .font(.headline)
-                .multilineTextAlignment(.center)
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                print("Clicked")
-            }
-            .padding(0.0)
+        TabView {
+            Text("Home page")
+                .tabItem {
+                    Image(systemName: "cup.and.saucer")
+                    Text("Menu")
+                }
+            OffersPage()
+                .tabItem {
+                            Image(systemName: "tag")
+                            Text("Offers")
+                        }
+            Text("Order page")
+                .tabItem {
+                            Image(systemName: "cart")
+                            Text("My Order")
+                        }
+            Text("Info page")
+                .tabItem {
+                            Image(systemName: "info.circle")
+                            Text("Info")
+                        }
         }
-        .padding()
     }
 }
 
