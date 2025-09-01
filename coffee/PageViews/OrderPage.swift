@@ -89,4 +89,5 @@ struct OrderPage: View {
 
 #Preview {
     OrderPage().environmentObject(CartManager())
+        .environmentObject(MenuManager())
 }

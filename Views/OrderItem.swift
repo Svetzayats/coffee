@@ -30,4 +30,5 @@ struct OrderItem: View {
 
 #Preview {
     OrderItem(item: (Product(id: 1, name: "Dummy", description: "", price: 1.25, image: ""), 2))
+        .environmentObject(CartManager())
 }

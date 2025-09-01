@@ -64,4 +64,5 @@ struct ProductThumbnail: View {
 
 #Preview {
     DetailsPage(product: Product(id: 1, name: "Coffee", description: nil, price: 1.5, image:""))
+        .environmentObject(CartManager())
 }
