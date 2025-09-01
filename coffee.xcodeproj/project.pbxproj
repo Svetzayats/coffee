@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60DFA962E64E7B800FDE7A9 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DFA952E64E7B800FDE7A9 /* Offer.swift */; };
-		B60DFAA52E64FACE00FDE7A9 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DFAA42E64FACE00FDE7A9 /* ProductItem.swift */; };
-		B60DFAE52E650A7700FDE7A9 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DFAE42E650A7700FDE7A9 /* OrderItem.swift */; };
 		B60DFB022E650FD800FDE7A9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B60DFB012E650FD800FDE7A9 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B60DFA852E64C95800FDE7A9 /* coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B60DFA952E64E7B800FDE7A9 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
-		B60DFAA42E64FACE00FDE7A9 /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
-		B60DFAE42E650A7700FDE7A9 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B6267BE22E665D1D00879C42 /* Exceptions for "coffee" folder in "coffee" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B60DFA842E64C95800FDE7A9 /* coffee */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B60DFA872E64C95800FDE7A9 /* coffee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6267BE22E665D1D00879C42 /* Exceptions for "coffee" folder in "coffee" target */,
+			);
 			path = coffee;
 			sourceTree = "<group>";
 		};
@@ -45,7 +52,6 @@
 			children = (
 				B60DFA862E64C95800FDE7A9 /* Products */,
 				B60DFA872E64C95800FDE7A9 /* coffee */,
-				B60DFA9C2E64F93600FDE7A9 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,16 +61,6 @@
 				B60DFA852E64C95800FDE7A9 /* coffee.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B60DFA9C2E64F93600FDE7A9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B60DFA952E64E7B800FDE7A9 /* Offer.swift */,
-				B60DFAA42E64FACE00FDE7A9 /* ProductItem.swift */,
-				B60DFAE42E650A7700FDE7A9 /* OrderItem.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60DFAE52E650A7700FDE7A9 /* OrderItem.swift in Sources */,
-				B60DFA962E64E7B800FDE7A9 /* Offer.swift in Sources */,
-				B60DFAA52E64FACE00FDE7A9 /* ProductItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +275,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = coffee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,9 +302,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = coffee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
